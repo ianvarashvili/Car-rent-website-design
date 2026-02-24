@@ -27,7 +27,7 @@ body {
       align-items: center;
       justify-content: space-between;
       padding: 10px 0;
-  
+
       .search-start {
         display: flex;
         gap: 20px;
@@ -54,21 +54,31 @@ body {
       padding: 10px;
       border: 1px solid var(--border-color);
       border-radius: 50%;
-
-      
+    }
+    & a:nth-child(2) {
+      position: relative;
+    }
+    .circle {
+      width: 11px;
+      height: 11px;
+      background-color: #ff4423;
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
     }
 
-     & a:nth-child(3):hover{
-        animation-name: rotation;
+    & a:first-child:hover {
+      animation-name: scale;
       animation-duration: 1s;
-     }
-     & a:nth-child(2):hover{
-        animation-name: shake;
+    }
+    & a:nth-child(3):hover {
+      animation-name: rotation;
+      animation-duration: 1s;
+    }
+    & a:nth-child(2):hover {
+      animation-name: shake;
       animation-duration: 0.6s;
-     }
-     & a:first-child:hover{
-        animation-name: scale;
-      animation-duration: 1s;
-     }
+    }
   }
 }
