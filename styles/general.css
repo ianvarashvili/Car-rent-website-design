@@ -1,0 +1,44 @@
+:root{
+--primary-heading: 32px;
+--secondary-headings: 20px;
+--sub-text: 14px;
+--sub-text-small: 12px;
+
+--blue-btn: #3563E9;
+--light-blue-btn: #54A6FF;
+
+--main-text-color: #1A202C;
+--placeholder-text-color: #596780;
+--sub-text-color: #90A3BF;
+--text-white: #fff;
+
+--radius-card: 10px;
+--radius-btn: 4px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+@font-face {
+    font-family: "Jakarta-B";
+    src: url(../assets/fonts/PlusJakartaSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Jakarta-M";
+    src: url(../assets/fonts/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+    font-family: "Jakarta-R";
+    src: url(../assets/fonts/PlusJakartaSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Jakarta-B";
+    src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf);
+}
+
