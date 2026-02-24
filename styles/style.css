@@ -1,0 +1,74 @@
+body {
+  font-family: "Jakarta-R", sans-serif;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px 60px;
+
+  border: 1px solid var(--border-color);
+
+  .logo-search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: var(--primary-heading);
+      color: var(--blue-btn);
+      font-family: "Jakarta-B";
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+  
+      .search-start {
+        display: flex;
+        gap: 20px;
+        padding-left: 20px;
+      }
+
+      .search-end {
+        padding-right: 20px;
+      }
+
+      margin-left: 64px;
+      width: 495px;
+      border: 1px solid var(--border-color);
+      border-radius: 70px;
+    }
+  }
+
+  .nav-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    & a:not(:last-child) {
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+
+      
+    }
+
+     & a:nth-child(3):hover{
+        animation-name: rotation;
+      animation-duration: 1s;
+     }
+     & a:nth-child(2):hover{
+        animation-name: shake;
+      animation-duration: 0.6s;
+     }
+     & a:first-child:hover{
+        animation-name: scale;
+      animation-duration: 1s;
+     }
+  }
+}
