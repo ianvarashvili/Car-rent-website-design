@@ -1,4 +1,4 @@
-//------------------------RECOMMENDED CARS-----------------------//
+//------------------------POPULAR CARS-----------------------//
 
 const carData = [
   {
@@ -83,9 +83,9 @@ function displayCars() {
 
     container.innerHTML += cardHTML;
   });
+
 }
 
-displayCars();
 
 //------------------------RECOMMENDED CARS-------------------------//
 const carData2 = [
@@ -210,6 +210,23 @@ function displayCars2() {
 
     container2.innerHTML += cardHTML;
   });
+
+
+}
+/////////// FAV ICON CLICK///////////
+function favIcons() {
+  document.querySelectorAll(".fav-icon").forEach((icon) => {
+    icon.addEventListener("click", () => {
+      const isFaved = icon.classList.toggle("faved");
+      if (isFaved) {
+        icon.src = "assets/images/icons/fav-filled.png";
+      } else {
+        icon.src = "assets/images/icons/fav.png";
+      }
+    });
+  });
 }
 
+displayCars();
 displayCars2();
+favIcons();
