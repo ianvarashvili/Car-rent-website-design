@@ -1,4 +1,4 @@
-//------------------------RECOMMENDED CARS-----------------------//
+//------------------------POPULAR CARS-----------------------//
 
 const carData = [
   {
@@ -213,3 +213,4 @@ function displayCars2() {
 }
 
 displayCars2();
+
