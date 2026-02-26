@@ -1,0 +1,71 @@
+.hero-section {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+
+  .hero-banner {
+    position: relative;
+    overflow: hidden;
+    width: 640px;
+    background-color: var(--light-blue);
+    border-radius: var(--radius-card);
+
+    .banner-details {
+      position: relative;
+      z-index: 2;
+      width: 350px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+      color: var(--text-white);
+      padding: 24px;
+
+      & h1 {
+        font-family: "Jakarta-S";
+      }
+
+      & p {
+        font-family: "Jakarta-M";
+      }
+    }
+
+    & img {
+      display: flex;
+      justify-self: center;
+      padding-left: 50px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .circle-stripe {
+      position: absolute;
+      top: -80px;
+      left: -150px;
+      width: 775px;
+      height: 775px;
+      border-radius: 50%;
+      z-index: 0;
+      pointer-events: none;
+
+      background: repeating-radial-gradient(
+        circle,
+        #ffffff0f 0px,
+        #ffffff0f 20px,
+        transparent 20px,
+        transparent 60px
+      );
+    }
+  }
+
+  .banner-2 {
+    background-color: var(--blue);
+    background-image: url(../assets/images/rectangle.png);
+   
+
+    & button {
+      background-color: var(--light-blue);
+    }
+  }
+}

@@ -4,8 +4,8 @@
 --sub-text: 14px;
 --sub-text-small: 12px;
 
---blue-btn: #3563E9;
---light-blue-btn: #54A6FF;
+--blue: #3563E9;
+--light-blue: #54A6FF;
 
 --main-text-color: #1A202C;
 --placeholder-text-color: #596780;
@@ -40,7 +40,28 @@
     src: url(../assets/fonts/PlusJakartaSans-Regular.ttf);
 }
 @font-face {
-    font-family: "Jakarta-B";
+    font-family: "Jakarta-S";
     src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf);
 }
 
+body {
+  font-family: "Jakarta-R", sans-serif;
+}
+.container{
+    width: 100%;
+    padding: 32px 64px;
+ 
+
+}
+
+button{
+    padding: 10px 20px;
+    font-family: "Jakarta-S";
+    border-radius: var(--radius-btn);
+    background-color: var(--blue);
+    color: var(--text-white);
+}
+
+.display-none{
+    display: none;
+}

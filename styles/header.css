@@ -1,6 +1,4 @@
-body {
-  font-family: "Jakarta-R", sans-serif;
-}
+
 
 .header-wrapper {
   display: flex;
@@ -18,7 +16,7 @@ body {
 
     .logo {
       font-size: var(--primary-heading);
-      color: var(--blue-btn);
+      color: var(--blue);
       font-family: "Jakarta-B";
     }
 
@@ -27,6 +25,10 @@ body {
       align-items: center;
       justify-content: space-between;
       padding: 10px 0;
+
+      input:focus {
+        outline: none;
+      }
 
       .search-start {
         display: flex;
@@ -42,6 +44,13 @@ body {
       width: 495px;
       border: 1px solid var(--border-color);
       border-radius: 70px;
+    }
+
+    .search-icon:hover,
+    .filter-icon:hover {
+      filter: hue-rotate(140deg);
+
+      cursor: pointer;
     }
   }
 

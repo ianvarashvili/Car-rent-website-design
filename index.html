@@ -2,34 +2,81 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HF - Home Car Rent</title>
   </head>
   <body>
     <header class="header-wrapper">
-        <div class="logo-search-wrapper">
-            <a class="logo" href="#">MORENT</a>
-            <form class="search">
-                <div class="search-start">
-                <img src="assets/images/icons/search.png" alt="search icon">
-                <input type="text" 
-                placeholder="Search something here"
-                >
-                </div>
-                <div class="search-end"> <img src="assets/images/icons/filter.png" alt="filter icon"></div>
-               
-            </form>
-        </div>
-        <div class="nav-wrapper">
-            <a href="#"><img src="assets/images/icons/heart.png" alt="icon heart"></a>
-            
-            <a href="#"><img src="assets/images/icons/notification.png" alt="icon notification"> <div class="circle"></div></a>
-            <a href="#"><img src="assets/images/icons/settings.png" alt="icon settings"></a>
-            <a href="#"><img src="assets/images/avatar.png" alt="avatar pfp"></a>
-        </div>
+      <div class="logo-search-wrapper">
+        <a class="logo" href="#">MORENT</a>
+        <form class="search">
+          <div class="search-start">
+            <img
+              class="search-icon"
+              src="assets/images/icons/search.png"
+              alt="search icon"
+            />
+            <input type="text" placeholder="Search something here" />
+          </div>
+          <div class="search-end">
+            <img
+              class="filter-icon"
+              src="assets/images/icons/filter.png"
+              alt="filter icon"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="nav-wrapper">
+        <a href="#"
+          ><img src="assets/images/icons/heart.png" alt="icon heart"
+        /></a>
+
+        <a href="#"
+          ><img
+            src="assets/images/icons/notification.png"
+            alt="icon notification" />
+          <div class="circle"></div
+        ></a>
+        <a href="#"
+          ><img src="assets/images/icons/settings.png" alt="icon settings"
+        /></a>
+        <a href="#"><img src="assets/images/avatar.png" alt="avatar pfp" /></a>
+      </div>
     </header>
+
+    <main>
+      <section class="hero-section container">
+        <div class="hero-banner">
+          <div class="banner-details">
+            <h1>The Best Platform for Car Rental</h1>
+            <p>
+              Ease of doing a car rental safely and reliably. Of course at a low
+              price.
+            </p>
+            <button>Rental Car</button>
+          </div>
+
+          <img src="assets/images/cars/hero-car-1.png" alt="" />
+          <div class="circle-stripe"></div>
+        </div>
+        <div class="hero-banner banner-2">
+          <div class="banner-details">
+            <h1>Easy way to rent a car at a low price</h1>
+            <p>
+              Providing cheap car rental services and safe and comfortable facilities.
+            </p>
+            <button>Rental Car</button>
+          </div>
+
+          <img src="assets/images/cars/hero-car-2.png" alt="" />
+          <div class="circle-stripe display-none"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
