@@ -62,10 +62,81 @@
   .banner-2 {
     background-color: var(--blue);
     background-image: url(../assets/images/rectangle.png);
-   
 
     & button {
       background-color: var(--light-blue);
+    }
+    & button:hover {
+      cursor: pointer;
+      background-color: #4985c5;
+    }
+  }
+}
+
+/* -------------FILTER--------------- */
+
+.filter-section {
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+
+  & button {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-card);
+  }
+
+  .filter-card {
+    border-radius: var(--radius-card);
+    padding: 24px 48px;
+
+    .radio {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      label {
+        font-family: "Jakarta-S";
+      }
+
+      input[type="radio"] {
+        accent-color: var(--blue);
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+    }
+
+    & p {
+      color: var(--sub-text-color);
+      font-size: var(--sub-text-small);
+    }
+    .filter-group {
+      display: flex;
+      gap: 24px;
+      padding-top: 16px;
+
+      .filter-item {
+        .item-title {
+          font-family: "Jakarta-B";
+          color: var(--main-text-color);
+          padding-bottom: 8px;
+          font-size: 16px;
+        }
+        .option {
+          display: flex;
+          align-items: center;
+          & img {
+            padding-left: 15px;
+          }
+          & img:hover {
+            cursor: pointer;
+            filter: hue-rotate(140deg);
+          }
+        }
+      }
     }
   }
 }

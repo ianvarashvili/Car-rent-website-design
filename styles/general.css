@@ -60,6 +60,12 @@ button{
     border-radius: var(--radius-btn);
     background-color: var(--blue);
     color: var(--text-white);
+    transition: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #18358b;
 }
 
 .display-none{
