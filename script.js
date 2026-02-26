@@ -213,7 +213,7 @@ function displayCars2() {
 
 
 }
-/////////// FAV ICON CLICK///////////
+/////////// FAV ICON CLICK FUNCTION///////////
 function favIcons() {
   document.querySelectorAll(".fav-icon").forEach((icon) => {
     icon.addEventListener("click", () => {
