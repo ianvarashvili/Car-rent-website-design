@@ -79,3 +79,16 @@ h4 {
   border-radius: var(--radius-btn);
   padding: 10px 20px;
 }
+
+
+.flex{
+   display: flex;
+  gap: 32px;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+}

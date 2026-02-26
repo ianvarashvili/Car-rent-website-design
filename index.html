@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/popular-cars.css" />
+    <link rel="stylesheet" href="styles/cars-gallery.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HF - Home Car Rent</title>
@@ -156,7 +156,7 @@
         </div>
 
         <!-- --------------------- -->
-        <div class="popular-cars">
+        <div class="popular-cars-gallery flex">
           <div class="car-card">
             <p class="car-model">
               Koenigsegg
@@ -188,7 +188,51 @@
               </div>
             </div>
             <div class="price-and-rent">
-              <p><b>$99.00/ </b>day</p>
+              <p><span class="price">$99.00/</span>day></p>
+              <button>Rent Now</button>
+              <p class="old-price">$100.00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------RECOMMENDED CARS------------- -->
+      <section class="recommended-section container">
+        <h4>Recommendation Car</h4>
+
+        <div class="cars-gallery grid">
+          <div class="car-card">
+            <p class="car-model">
+              Koenigsegg
+              <img class="fav-icon" src="assets/images/icons/fav.png" alt="" />
+            </p>
+            <p class="car-type">Sport</p>
+            <img class="car-img" src="assets/images/cars/car-1.png" alt="" />
+            <div class="car-details">
+              <div class="details-item">
+                <img
+                  src="assets/images/icons/gas-station.png"
+                  alt="gas-station icon"
+                />
+                <p>90L</p>
+              </div>
+              <div class="details-item">
+                <img
+                  src="assets/images/icons/manual.png"
+                  alt="car manual icon"
+                />
+                <p>Manual</p>
+              </div>
+              <div class="details-item">
+                <img
+                  src="assets/images/icons/people.png"
+                  alt="2 users people icon"
+                />
+                <p>2 People</p>
+              </div>
+            </div>
+            <div class="price-and-rent">
+              <p><span>$99.00/</span> day</p>
               <button>Rent Now</button>
               <p class="old-price">$100.00</p>
             </div>
