@@ -80,10 +80,9 @@
       color: var(--sub-text-color);
       position: relative;
 
-     .price {
-      font-family: "Jakarta-B";
+      .price {
+        font-family: "Jakarta-B";
         color: var(--main-text-color);
-        
       }
 
       .old-price {
@@ -169,13 +168,12 @@
       align-items: center;
 
       position: relative;
-        color: var(--sub-text-color);
+      color: var(--sub-text-color);
       position: relative;
 
-     .price {
-      font-family: "Jakarta-B";
+      .price {
+        font-family: "Jakarta-B";
         color: var(--main-text-color);
-        
       }
 
       .old-price {
@@ -188,6 +186,24 @@
         font-family: "Jakarta-B";
         text-decoration: line-through;
       }
+    }
+  }
+}
+
+.more-wrapper {
+  display: flex;
+  justify-content: end;
+
+  & div {
+    width: 734px;
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0;
+
+    & p {
+      font-size: var(--sub-text);
+      color: var(--sub-text-color);
+      font-family: "Jakarta-M";
     }
   }
 }

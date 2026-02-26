@@ -1,0 +1,58 @@
+.footer-section {
+  background-color: #fff;
+
+  .footer-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-vision-wrapper {
+      width: 292px;
+      padding-bottom: 172px;
+      .vision {
+        padding-top: 16px;
+        font-family: "Jakarta-M";
+        color: #13131399;
+        line-height: 1.5;
+      }
+    }
+
+    .about-community-socials {
+      display: flex;
+      gap: 60px;
+      color: #13131399;
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      & div :first-child {
+        color: var(--main-text-color);
+        font-family: "Jakarta-S";
+      }
+    }
+    .about p:hover,
+    .community p:hover,
+    .socials a:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.copyright {
+  border-top: 1px solid #13131329;
+  padding-top: 36px;
+  padding-bottom: 60px;
+  color: var(--main-text-color);
+  font-family: "Jakarta-S";
+  display: flex;
+  justify-content: space-between;
+
+  .privacy-terms {
+    display: flex;
+    gap: 60px;
+  }
+  .privacy-terms:hover {
+    cursor: pointer;
+  }
+}

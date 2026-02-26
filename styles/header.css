@@ -14,11 +14,7 @@
     align-items: center;
     justify-content: center;
 
-    .logo {
-      font-size: var(--primary-heading);
-      color: var(--blue);
-      font-family: "Jakarta-B";
-    }
+ 
 
     .search {
       display: flex;
@@ -91,3 +87,4 @@
     }
   }
 }
+

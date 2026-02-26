@@ -52,7 +52,11 @@ body {
   max-width: 1440px;
   padding: 32px 64px;
   margin: 0 auto;
-  
+}
+.logo {
+  font-size: var(--primary-heading);
+  color: var(--blue);
+  font-family: "Jakarta-B";
 }
 
 button {
@@ -80,14 +84,12 @@ h4 {
   padding: 10px 20px;
 }
 
-
-.flex{
-   display: flex;
+.flex {
+  display: flex;
   gap: 32px;
 }
 
-
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 34px;
