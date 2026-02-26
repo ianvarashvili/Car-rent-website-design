@@ -1,3 +1,7 @@
+main {
+  background-color: #f6f7f9;
+}
+
 .hero-section {
   display: flex;
   gap: 32px;
@@ -89,6 +93,8 @@
   }
 
   .filter-card {
+    background-color: #fff;
+    box-shadow: 5px 5px #00000004;
     border-radius: var(--radius-card);
     padding: 24px 48px;
 

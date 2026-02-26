@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/popular-cars.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HF - Home Car Rent</title>
@@ -50,6 +51,7 @@
     </header>
 
     <main>
+      <!-- ------------HERO section -------------->
       <section class="hero-section container">
         <div class="hero-banner">
           <div class="banner-details">
@@ -61,7 +63,7 @@
             <button>Rental Car</button>
           </div>
 
-          <img src="assets/images/cars/hero-car-1.png" alt="" />
+          <img src="assets/images/cars/car-1.png" alt="" />
           <div class="circle-stripe"></div>
         </div>
         <div class="hero-banner banner-2">
@@ -74,61 +76,126 @@
             <button>Rental Car</button>
           </div>
 
-          <img src="assets/images/cars/hero-car-2.png" alt="" />
+          <img src="assets/images/cars/car-2.png" alt="" />
           <div class="circle-stripe display-none"></div>
         </div>
       </section>
- <!-- ------------filter section -------------->
+      <!-- ------------FILTER section -------------->
       <section class="filter-section container">
         <div class="filter-card">
           <div class="radio">
-             <input type="radio" name="pickup" />
-          <label for="pickup">Pick-Up</label>
+            <input type="radio" name="pickup" />
+            <label for="pickup">Pick-Up</label>
           </div>
-         
+
           <div class="filter-group">
             <div class="filter-item">
               <p class="item-title">Locations</p>
-              <p class="option">Select your city <img src="assets/images/icons/arrow-down.png" alt=""></p>
+              <p class="option">
+                Select your city
+                <img src="assets/images/icons/arrow-down.png" alt="" />
+              </p>
             </div>
             <div class="filter-item">
               <p class="item-title">Date</p>
-              <p class="option">Select your date <img src="assets/images/icons/arrow-down.png" alt=""></p>
+              <p class="option">
+                Select your date
+                <img src="assets/images/icons/arrow-down.png" alt="" />
+              </p>
             </div>
             <div class="filter-item">
               <p class="item-title">Time</p>
-              <p class="option">Select your time <img src="assets/images/icons/arrow-down.png" alt=""></p>
+              <p class="option">
+                Select your time
+                <img src="assets/images/icons/arrow-down.png" alt="" />
+              </p>
             </div>
-           
           </div>
         </div>
 
         <button>
-          <img src="assets/images/icons/Swap.png" alt="">
+          <img src="assets/images/icons/Swap.png" alt="" />
         </button>
 
-            <div class="filter-card">
-              <div class="radio">
-          <input type="radio" name="Drop-Off" />
-          <label for="Drop-Off">Drop-Off</label>
+        <div class="filter-card">
+          <div class="radio">
+            <input type="radio" name="Drop-Off" />
+            <label for="Drop-Off">Drop-Off</label>
           </div>
           <div class="filter-group">
             <div class="filter-item">
               <p class="item-title">Locations</p>
-              <p class="option">Select your city <img src="assets/images/icons/arrow-down.png" alt=""></p>
+              <p class="option">
+                Select your city
+                <img src="assets/images/icons/arrow-down.png" alt="" />
+              </p>
             </div>
             <div class="filter-item">
               <p class="item-title">Date</p>
-              <p class="option">Select your date <img src="assets/images/icons/arrow-down.png" alt=""></p>
+              <p class="option">
+                Select your date
+                <img src="assets/images/icons/arrow-down.png" alt="" />
+              </p>
             </div>
             <div class="filter-item">
               <p class="item-title">Time</p>
-              <p class="option">Select your time <img src="assets/images/icons/arrow-down.png" alt=""></p>
+              <p class="option">
+                Select your time
+                <img src="assets/images/icons/arrow-down.png" alt="" />
+              </p>
             </div>
-           
+          </div>
+        </div>
+      </section>
+      <!-- ------------POPULARsection -------------->
+
+      <section class="popular-section container">
+        <div class="popular-header">
+          <h4>Popular Car</h4>
+          <p>View All</p>
+        </div>
+
+        <!-- --------------------- -->
+        <div class="popular-cars">
+          <div class="car-card">
+            <p class="car-model">
+              Koenigsegg
+              <img class="fav-icon" src="assets/images/icons/fav.png" alt="" />
+            </p>
+            <p class="car-type">Sport</p>
+            <img class="car-img" src="assets/images/cars/car-1.png" alt="" />
+            <div class="car-details">
+              <div class="details-item">
+                <img
+                  src="assets/images/icons/gas-station.png"
+                  alt="gas-station icon"
+                />
+                <p>90L</p>
+              </div>
+              <div class="details-item">
+                <img
+                  src="assets/images/icons/manual.png"
+                  alt="car manual icon"
+                />
+                <p>Manual</p>
+              </div>
+              <div class="details-item">
+                <img
+                  src="assets/images/icons/people.png"
+                  alt="2 users people icon"
+                />
+                <p>2 People</p>
+              </div>
+            </div>
+            <div class="price-and-rent">
+              <p><b>$99.00/ </b>day</p>
+              <button>Rent Now</button>
+              <p class="old-price">$100.00</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,73 +1,81 @@
-:root{
---primary-heading: 32px;
---secondary-headings: 20px;
---sub-text: 14px;
---sub-text-small: 12px;
+:root {
+  --primary-heading: 32px;
+  --secondary-headings: 20px;
+  --sub-text: 14px;
+  --sub-text-small: 12px;
 
---blue: #3563E9;
---light-blue: #54A6FF;
+  --blue: #3563e9;
+  --light-blue: #54a6ff;
 
---main-text-color: #1A202C;
---placeholder-text-color: #596780;
---sub-text-color: #90A3BF;
---text-white: #fff;
+  --main-text-color: #1a202c;
+  --placeholder-text-color: #596780;
+  --sub-text-color: #90a3bf;
+  --text-white: #fff;
 
---radius-card: 10px;
---radius-btn: 4px;
+  --radius-card: 10px;
+  --radius-btn: 4px;
 
---border-color: #C3D4E966;
+  --border-color: #c3d4e966;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
 }
 
 @font-face {
-    font-family: "Jakarta-B";
-    src: url(../assets/fonts/PlusJakartaSans-Bold.ttf);
+  font-family: "Jakarta-B";
+  src: url(../assets/fonts/PlusJakartaSans-Bold.ttf);
 }
 @font-face {
-    font-family: "Jakarta-M";
-    src: url(../assets/fonts/PlusJakartaSans-Medium.ttf);
+  font-family: "Jakarta-M";
+  src: url(../assets/fonts/PlusJakartaSans-Medium.ttf);
 }
 @font-face {
-    font-family: "Jakarta-R";
-    src: url(../assets/fonts/PlusJakartaSans-Regular.ttf);
+  font-family: "Jakarta-R";
+  src: url(../assets/fonts/PlusJakartaSans-Regular.ttf);
 }
 @font-face {
-    font-family: "Jakarta-S";
-    src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf);
+  font-family: "Jakarta-S";
+  src: url(../assets/fonts/PlusJakartaSans-SemiBold.ttf);
 }
 
 body {
   font-family: "Jakarta-R", sans-serif;
 }
-.container{
-    width: 100%;
-    padding: 32px 64px;
- 
-
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 32px 64px;
+  margin: 0 auto;
+  
 }
 
-button{
-    padding: 10px 20px;
-    font-family: "Jakarta-S";
-    border-radius: var(--radius-btn);
-    background-color: var(--blue);
-    color: var(--text-white);
-    transition: 0.3s;
+button {
+  padding: 10px 20px;
+  font-family: "Jakarta-S";
+  border-radius: var(--radius-btn);
+  background-color: var(--blue);
+  color: var(--text-white);
+  transition: 0.3s;
 }
 
-button:hover{
-    cursor: pointer;
-    background-color: #18358b;
+button:hover {
+  cursor: pointer;
+  background-color: #18358b;
 }
 
-.display-none{
-    display: none;
+.display-none {
+  display: none;
+}
+
+h4 {
+  font-family: "Jakarta-S";
+  color: var(--sub-text-color);
+  border-radius: var(--radius-btn);
+  padding: 10px 20px;
 }
