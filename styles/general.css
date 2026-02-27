@@ -25,7 +25,17 @@
   list-style: none;
   box-sizing: border-box;
   border: none;
+
   /* outline: 1px solid red; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
 }
 
 @font-face {
@@ -78,7 +88,7 @@ button:hover {
   display: none;
 }
 
-h4 {
+h2 {
   font-family: "Jakarta-S";
   color: var(--sub-text-color);
   border-radius: var(--radius-btn);
@@ -95,4 +105,3 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   gap: 34px;
 }
-
