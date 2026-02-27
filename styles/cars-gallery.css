@@ -28,9 +28,7 @@ scrollbar-color: var(--light-blue);
 
     .car-model {
       padding-bottom: 4px;
-      font-size: var(--secondary-headings);
-      color: var(--main-text-color);
-      font-family: "jakarta-B";
+
       position: relative;
 
       .fav-icon {

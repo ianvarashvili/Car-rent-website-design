@@ -28,6 +28,7 @@ main {
       padding: 24px;
 
       & h1 {
+      font-size: var(--primary-heading);
         font-family: "Jakarta-S";
       }
 

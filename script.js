@@ -51,10 +51,10 @@ function displayCars() {
   carData.forEach((car) => {
     const cardHTML = `
       <div class="car-card">
-        <p class="car-model">
+        <h3 class="car-model">
           ${car.model}
           <img class="fav-icon" src="assets/images/icons/fav.png" alt="" />
-        </p>
+        </h3>
         <p class="car-type">${car.type}</p>
         <img class="car-img" src="${car.img}" alt="${car.model}" />
         
@@ -178,10 +178,10 @@ function displayCars2() {
   carData2.forEach((car) => {
     const cardHTML = `
       <div class="car-card">
-        <p class="car-model">
+        <h3 class="car-model">
           ${car.model}
           <img class="fav-icon" src="assets/images/icons/fav.png" alt="" />
-        </p>
+        </h3>
         <p class="car-type">${car.type}</p>
         <img class="car-img" src="${car.img}" alt="${car.model}" />
         
