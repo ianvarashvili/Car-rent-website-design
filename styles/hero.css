@@ -80,70 +80,79 @@ main {
 
 /* -------------FILTER--------------- */
 
-.filter-section {
-  color: var(--main-text-color);
+
+
+.filter-section{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 44px;
 
-  & button {
+  button {
     width: 60px;
     height: 60px;
     border-radius: var(--radius-card);
   }
+  
+}
+form {
+  background-color: #fff;
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 48px;
+  label {
+    color: var(--main-text-color);
+    font-family: "Jakarta-B";
 
-  .filter-card {
-    background-color: #fff;
-    box-shadow: 5px 5px #00000004;
-    border-radius: var(--radius-card);
-    padding: 24px 48px;
+  }
+  & > label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-    .radio {
+    input[type="radio"] {
+      accent-color: var(--blue);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+
+  & .drop-downs-wrapper {
+    display: flex;
+    gap: 24px;
+    & .drop-down-item-wrapper {
       display: flex;
+      flex-direction: column;
       gap: 8px;
-      align-items: center;
 
-      label {
-        font-family: "Jakarta-S";
+      select {
+        color: var(--sub-text-color);
+        appearance: none;
+      }
+      input {
+        width: 90%;
+      }
+      input::placeholder {
+        color: var(--sub-text-color);
       }
 
-      input[type="radio"] {
-        accent-color: var(--blue);
-        width: 16px;
-        height: 16px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+      img:hover {
         cursor: pointer;
       }
     }
 
-    & p {
-      color: var(--sub-text-color);
-      font-size: var(--sub-text-small);
-    }
-    .filter-group {
+    .dropdown-item {
+      width: 124px;
       display: flex;
-      gap: 24px;
-      padding-top: 16px;
-
-      .filter-item {
-        .item-title {
-          font-family: "Jakarta-B";
-          color: var(--main-text-color);
-          padding-bottom: 8px;
-          font-size: 16px;
-        }
-        .option {
-          display: flex;
-          align-items: center;
-          & img {
-            padding-left: 15px;
-          }
-          & img:hover {
-            cursor: pointer;
-            filter: hue-rotate(140deg);
-          }
-        }
-      }
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

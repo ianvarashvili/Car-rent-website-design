@@ -39,7 +39,6 @@ scrollbar-color: var(--light-blue);
       }
       .fav-icon:hover {
         cursor: pointer;
-        fill: #555;
       }
     }
 

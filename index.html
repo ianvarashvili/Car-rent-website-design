@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/cars-gallery.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/queries.css">
+    <link rel="stylesheet" href="styles/queries.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HF - Home Car Rent</title>
@@ -84,70 +84,141 @@
       </section>
       <!-- ------------FILTER section -------------->
       <section class="filter-section container">
-        <div class="filter-card">
-          <div class="radio">
-            <input type="radio" name="pickup" />
-            <label for="pickup">Pick-Up</label>
+        <form action="">
+          <label> <input type="radio" />Pick-Up </label>
+          <div class="drop-downs-wrapper">
+            <div class="drop-down-item-wrapper">
+              <label for="location">Locations </label>
+              <div class="dropdown-item">
+              <select id="location">
+                <option selected  value="">
+                  Select your city
+                </option>
+                <option value="tbilisi">Tbilisi</option>
+                <option value="qutaisi">Qutaisi</option>
+              </select>
+                 <img
+                src="assets/images/icons/arrow-down.png"
+                alt="arrow down icon png"
+              />
+              </div>
+            </div>
+            <div class="drop-down-item-wrapper">
+              <label for="location">Date </label>
+              <div class="dropdown-item">
+              <input
+                type="text"
+                id="date"
+                name="date"
+                placeholder="Select your date"
+                onfocus="
+                  this.type = 'date';
+                  this.showPicker && this.showPicker();
+                "
+                onblur="if (!this.value) this.type = 'text';"
+                required
+              />
+              <img
+                src="assets/images/icons/arrow-down.png"
+                alt="arrow down icon png"
+              />
+              </div>
+            </div>
+            <div class="drop-down-item-wrapper">
+              <label for="location">Time</label>
+              <div class="dropdown-item">
+              <input
+                type="text"
+                id="date"
+                name="date"
+                placeholder="Select your time"
+                onfocus="
+                  this.type = 'time';
+                  this.showPicker && this.showPicker();
+                "
+                onblur="if (!this.value) this.type = 'text';"
+                required
+              />
+              <img
+                src="assets/images/icons/arrow-down.png"
+                alt="arrow down icon png"
+              />
+            </div>
+            </div>
           </div>
+        </form>
 
-          <div class="filter-group">
-            <div class="filter-item">
-              <p class="item-title">Locations</p>
-              <p class="option">
-                Select your city
-                <img src="assets/images/icons/arrow-down.png" alt="arrow down icon png " />
-              </p>
-            </div>
-            <div class="filter-item">
-              <p class="item-title">Date</p>
-              <p class="option">
-                Select your date
-                <img src="assets/images/icons/arrow-down.png" alt="arrow down icon png" />
-              </p>
-            </div>
-            <div class="filter-item">
-              <p class="item-title">Time</p>
-              <p class="option">
-                Select your time
-                <img src="assets/images/icons/arrow-down.png" alt="arrow down icon png" />
-              </p>
-            </div>
-          </div>
-        </div>
+
 
         <button>
           <img src="assets/images/icons/Swap.png" alt="swap icon png" />
         </button>
 
-        <div class="filter-card">
-          <div class="radio">
-            <input type="radio" name="Drop-Off" />
-            <label for="Drop-Off">Drop-Off</label>
+         <form action="">
+          <label> <input type="radio" />Drop-Off </label>
+          <div class="drop-downs-wrapper">
+            <div class="drop-down-item-wrapper">
+              <label for="location">Locations </label>
+              <div class="dropdown-item">
+              <select id="location">
+                <option selected  value="">
+                  Select your city
+                </option>
+                <option value="tbilisi">Tbilisi</option>
+                <option value="qutaisi">Qutaisi</option>
+              </select>
+                 <img
+                src="assets/images/icons/arrow-down.png"
+                alt="arrow down icon png"
+              />
+              </div>
+            </div>
+            <div class="drop-down-item-wrapper">
+              <label for="location">Date </label>
+              <div class="dropdown-item">
+              <input
+                type="text"
+                id="date"
+                name="date"
+                placeholder="Select your date"
+                onfocus="
+                  this.type = 'date';
+                  this.showPicker && this.showPicker();
+                "
+                onblur="if (!this.value) this.type = 'text';"
+                required
+              />
+              <img
+                src="assets/images/icons/arrow-down.png"
+                alt="arrow down icon png"
+              />
+              </div>
+            </div>
+            <div class="drop-down-item-wrapper">
+              <label for="location">Time</label>
+              <div class="dropdown-item">
+              <input
+                type="text"
+                id="date"
+                name="date"
+                placeholder="Select your time"
+                onfocus="
+                  this.type = 'time';
+                  this.showPicker && this.showPicker();
+                "
+                onblur="if (!this.value) this.type = 'text';"
+                required
+              />
+              <img
+                src="assets/images/icons/arrow-down.png"
+                alt="arrow down icon png"
+              />
+            </div>
+            </div>
           </div>
-          <div class="filter-group">
-            <div class="filter-item">
-              <p class="item-title">Locations</p>
-              <p class="option">
-                Select your city
-                <img src="assets/images/icons/arrow-down.png" alt="arrow down icon png" />
-              </p>
-            </div>
-            <div class="filter-item">
-              <p class="item-title">Date</p>
-              <p class="option">
-                Select your date
-                <img src="assets/images/icons/arrow-down.png" alt="arrow down icon png" />
-              </p>
-            </div>
-            <div class="filter-item">
-              <p class="item-title">Time</p>
-              <p class="option">
-                Select your time
-                <img src="assets/images/icons/arrow-down.png" alt="arrow down icon png" />
-              </p>
-            </div>
-          </div>
-        </div>
+        </form>
+
+       
       </section>
       <!-- ------------POPULARsection -------------->
 
@@ -162,10 +233,18 @@
           <div class="car-card">
             <p class="car-model">
               Koenigsegg
-              <img class="fav-icon" src="assets/images/icons/fav.png"  alt="favourites heart png icon" />
+              <img
+                class="fav-icon"
+                src="assets/images/icons/fav.png"
+                alt="favourites heart png icon"
+              />
             </p>
             <p class="car-type">Sport</p>
-            <img class="car-img" src="assets/images/cars/car-1.png" alt="car png transparent" />
+            <img
+              class="car-img"
+              src="assets/images/cars/car-1.png"
+              alt="car png transparent"
+            />
             <div class="car-details">
               <div class="details-item">
                 <img
@@ -206,10 +285,18 @@
           <div class="car-card">
             <p class="car-model">
               Koenigsegg
-              <img class="fav-icon" src="assets/images/icons/fav.png" alt="favourites heart png icon" />
+              <img
+                class="fav-icon"
+                src="assets/images/icons/fav.png"
+                alt="favourites heart png icon"
+              />
             </p>
             <p class="car-type">Sport</p>
-            <img class="car-img" src="assets/images/cars/car-1.png" alt="car png transparent" />
+            <img
+              class="car-img"
+              src="assets/images/cars/car-1.png"
+              alt="car png transparent"
+            />
             <div class="car-details">
               <div class="details-item">
                 <img
