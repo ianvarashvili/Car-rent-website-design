@@ -26,7 +26,9 @@
   box-sizing: border-box;
   border: none;
 }
-
+* {
+  outline: 1px solid red;
+}
 @font-face {
   font-family: "Jakarta-B";
   src: url(../assets/fonts/PlusJakartaSans-Bold.ttf);
@@ -94,3 +96,4 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   gap: 34px;
 }
+

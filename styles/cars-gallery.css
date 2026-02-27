@@ -1,6 +1,7 @@
 /* -------------------POPULAR CARS --------------*/
 
 .popular-header {
+ 
   display: flex;
   justify-content: space-between;
   color: var(--blue);
@@ -14,7 +15,9 @@
 
 .popular-cars-gallery {
   margin-top: 20px;
-
+overflow-x: auto;  /* scrollbar */
+scrollbar-width: thin;
+scrollbar-color: var(--light-blue);
   .car-card {
     padding: 24px;
     border-radius: var(--radius-card);
